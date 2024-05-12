@@ -1,3 +1,4 @@
+
 package com.example.mynotes
 
 import android.os.Bundle
@@ -44,5 +45,5 @@ class UpdateActivity : AppCompatActivity() {
             Toast.makeText(this, "Changes Saved", Toast.LENGTH_SHORT).show()
         }
 
-        }
     }
+}

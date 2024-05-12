@@ -1,3 +1,4 @@
+
 package com.example.mynotes
 
 import android.content.ContentValues
@@ -78,15 +79,15 @@ class NotesDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE
         val title = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TITLE))
         val content = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_CONTENT))
 
-                cursor.close()
-                db.close()
-                return Note(id, title, content)
+        cursor.close()
+        db.close()
+        return Note(id, title, content)
     }
-        fun deleteNote(noteId: Int){
-            val db = writableDatabase
-            val whereClause = "$COLUMN_ID = ?"
-            val whereArgs = arrayOf(noteId.toString())
-            db.delete(TABLE_NAME, whereClause, whereArgs)
-            db.close()
-        }
+    fun deleteNote(noteId: Int){
+        val db = writableDatabase
+        val whereClause = "$COLUMN_ID = ?"
+        val whereArgs = arrayOf(noteId.toString())
+        db.delete(TABLE_NAME, whereClause, whereArgs)
+        db.close()
+    }
 }

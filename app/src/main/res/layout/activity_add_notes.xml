@@ -16,9 +16,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins"
-        android:text="Add Note."
-        android:textColor="@color/orange"
-        android:textSize="24sp" />
+        android:text="Enter Task"
+        android:textColor="@color/blue"
+        android:textSize="26sp" />
 
     <ImageView
         android:id="@+id/saveButton"
@@ -28,13 +28,14 @@
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/addNoteHeading"
         android:layout_marginEnd="6dp"/>
+
     <EditText
         android:id="@+id/titleEditText"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:hint="Enter the title"
+        android:hint="Title"
         android:padding="12dp"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:layout_below="@id/addNoteHeading"
         android:background="@drawable/orange_border"
         android:layout_marginTop="16dp"

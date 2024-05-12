@@ -14,9 +14,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins"
-        android:text="Edit Note."
-        android:textColor="@color/orange"
-        android:textSize="24sp" />
+        android:text="Enter Task"
+        android:textColor="@color/blue"
+        android:textSize="26sp" />
 
     <ImageView
         android:id="@+id/updateSaveButton"
@@ -31,14 +31,16 @@
         android:id="@+id/updateTitleEditText"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:hint="Enter the title"
+        android:hint="Title"
         android:padding="12dp"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:background="@drawable/orange_border"
         android:layout_below="@id/editNoteHeading"
         android:layout_marginTop="16dp"
         android:maxLines="1"
         android:fontFamily="@font/poppins"/>
+
+    <!-- Removed the "Enter Date and Time" EditText -->
 
     <EditText
         android:id="@+id/updateContentEditText"

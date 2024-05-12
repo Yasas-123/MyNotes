@@ -1,3 +1,4 @@
+
 package com.example.mynotes
 
 import android.content.Context
@@ -30,9 +31,9 @@ class NotesAdapter (private var notes: List<Note>, context: Context) : RecyclerV
     override fun getItemCount(): Int = notes.size
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
-val note = notes[position]
-    holder.titleTextView.text = note.title
-    holder.contextTextView.text = note.content
+        val note = notes[position]
+        holder.titleTextView.text = note.title
+        holder.contextTextView.text = note.content
 
         holder.updateButton.setOnClickListener {
             val intent = Intent(holder.itemView.context, UpdateActivity:: class.java).apply{
